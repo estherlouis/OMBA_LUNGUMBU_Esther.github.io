@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des paiements - ISC</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>🎓 Gestion des paiements – ISC</h1>
+
+  <section class="form-section">
+    <h2>Ajouter un paiement</h2>
+    <form id="paymentForm">
+      <input type="text" id="agentName" placeholder="Nom de l'agent" required>
+      <input type="number" id="amount" placeholder="Montant payé (CDF)" required>
+      <button type="submit">💾 Enregistrer</button>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <h2>Historique des paiements</h2>
+    <table border="1" id="paymentsTable">
+      <thead>
+        <tr>
+          <th>Nom de l'agent</th>
+          <th>Montant</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
